@@ -1,0 +1,75 @@
+main {
+    margin-top: 85px;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 80px;
+    border-bottom: 5px solid #f6aa1c;
+    color: #f6aa1c;
+    padding: 15px;
+    margin: 120px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+#gallery {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pictures {
+    display: none;
+}
+
+.album {
+    height: 540px;
+    width: 360px;
+    background-color: lightgray;
+    overflow: hidden;
+    margin: 30px;
+}
+
+.album img {
+    width: 100%;
+    height: 90%;
+    display: block;
+    object-fit: cover;
+    align-self: start;
+    transition: .7s;
+}
+
+.album .title {
+    width: 100%;
+    height: 10%;
+    background-color: #320d03;
+    transition: .7s;
+}
+
+.title h2 {
+    font-size: 20px;
+    padding: 15px;
+    color: #f6aa1c;
+}
+
+.title p {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #c56314;
+}
+
+.album:hover .title {
+    height: 40%;
+}
+
+.album:hover img {
+    height: 60%;
+}
